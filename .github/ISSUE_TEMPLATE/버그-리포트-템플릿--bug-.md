@@ -1,6 +1,6 @@
 ---
-name: 버그 리포트 템플릿
-about: 프로젝트에서 발생하는 버그에 대하여 명
+name: 버그 리포트 템플릿 [bug]
+about: 프로젝트에서 발생하는 버그에 대하여 명세
 title: "[bug] "
 labels: bug
 assignees: ''

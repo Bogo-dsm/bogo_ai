@@ -1,16 +1,6 @@
 import re
 
-from langchain_community.document_loaders import PDFPlumberLoader
-
-
-def pdf_load(pdf_path : str) -> str:
-    loader = PDFPlumberLoader(pdf_path)
-    docs = loader.load()
-
-    text = str()
-    for doc in docs:
-        text += doc.page_content
-
+def pdf_load(text : str) -> str:
     roman_numerals = {'Ⅰ': '1', 'Ⅱ': '2', 'Ⅲ': '3', 'Ⅳ': '4', 'Ⅴ': '5'}
 
     text = text.replace('\n\n', '[[NEWLINE]]')
